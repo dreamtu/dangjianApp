@@ -1,0 +1,128 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      党支部
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: #f8f2e6;">
+  <ion-slides loop="true" class="dangzhibu-slide">
+    <ion-slide>
+      <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-puppy-1.jpg" />
+    </ion-slide>
+    <ion-slide>
+      <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-puppy-1.jpg" />
+    </ion-slide>
+    <ion-slide>
+      <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-puppy-1.jpg" />
+    </ion-slide>
+  </ion-slides>
+
+  <div>
+    <ion-item class="dangzhibu-titlex">
+      <span item-left style="color: #e2010f;">支部介绍</span>
+      <button ion-button clear item-end >
+        <ion-note>更多>></ion-note>
+      </button>
+    </ion-item>
+    <div>
+      <ion-row>
+        <ion-col>
+          <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-puppy-1.jpg" />
+        </ion-col>
+        <ion-col>
+          党支部是县教育科技局党委直接领导下的直属党支部，党支部是县教育科技局党委直接领导下的直属党支部，党支部是县教育科技局党委直接领导下的直属党支部，党支部是县教育科技局党委直接领导下的直属党支部。
+        </ion-col>
+      </ion-row>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col col-3 text-center>
+            <p><b style="color:#e2010f;font-size: 25px;">386</b> 票</p>
+          </ion-col>
+          <ion-col>
+            <button ion-button block>
+              <ion-icon name="thumbs-up"></ion-icon>&nbsp;&nbsp;为他们点赞
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+  <div>
+    <ion-item class="dangzhibu-titlex">
+      <span item-left style="color: #e2010f;">工作计划</span>
+      <button ion-button clear item-end >
+        <ion-note>更多>></ion-note>
+      </button>
+    </ion-item>
+    <ion-list>
+      <ion-item style="background-color: #fffaea;">
+        <h3>十月份党支部工作计划表</h3>
+        <button ion-button clear item-end style="color: black">2018-01-04</button>
+      </ion-item>
+      <ion-item style="background-color: #fffaea;">
+        <h3>九月份党支部工作计划表</h3>
+        <button ion-button clear item-end style="color: black">2018-01-05</button>
+      </ion-item>
+      <ion-item style="background-color: #fffaea;">
+        <h3>八月份党支部工作计划表</h3>
+        <button ion-button clear item-end style="color: black">2018-01-06</button>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div>
+    <ion-item class="dangzhibu-titlex">
+      <span item-left style="color: #e2010f;">党员先锋</span>
+      <button ion-button clear item-end (click)="dangyuanList()">
+        <ion-note>更多>></ion-note>
+      </button>
+    </ion-item>
+    <div class="xianfeng">
+      <ion-row>
+        <ion-col (click)="citySelect(1)">
+          <ion-icon class="Ionicons icon-dangjiandongtai"></ion-icon>
+          <p>于立东</p>
+        </ion-col>
+        <ion-col (click)="citySelect(2)">
+          <ion-icon class="Ionicons icon-dangjian1"></ion-icon>
+          <p>王华荣</p>
+        </ion-col>
+        <ion-col (click)="dangyuanList()">
+          <ion-icon class="Ionicons icon-jiaonadangfei" ></ion-icon>
+          <p>黄水木</p>
+        </ion-col>
+        <ion-col (click)="goPerson()">
+          <ion-icon class="Ionicons icon-ionc--"></ion-icon>
+          <p>苏玲名</p>
+        </ion-col>
+        <ion-col (click)="goPerson()">
+          <ion-icon class="Ionicons icon-ionc--"></ion-icon>
+          <p>苏玲名</p>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  <div>
+    <ion-item class="dangzhibu-titlex">
+      <span item-left style="color: #e2010f;">支部动态</span>
+      <button ion-button clear item-end (click)="dangjianNews()">
+        <ion-note>更多>></ion-note>
+      </button>
+    </ion-item>
+    <ion-list>
+      <ion-item style="background-color: #fffaea;">
+        <ion-thumbnail item-start>
+          <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-puppy-1.jpg" />
+        </ion-thumbnail>
+        <h3 text-wrap>日照交通发展集团荣获2017中国企业文化建设典范企业</h3>
+        <p>2018-01-05</p>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

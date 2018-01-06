@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: #f8f2e6;">
+  <div class="home-btn">
+    <ion-row>
+      <ion-col (click)="dangjianNews()">
+        <ion-icon class="Ionicons icon-dangjiandongtai"></ion-icon>
+        <p>党建新闻</p>
+      </ion-col>
+      <ion-col (click)="dangzhibu()">
+        <ion-icon class="Ionicons icon-dangjian1"></ion-icon>
+        <p>党支部</p>
+      </ion-col>
+      <ion-col (click)="dangyuanList()">
+        <ion-icon class="Ionicons icon-jiaonadangfei" ></ion-icon>
+        <p>党员列表</p>
+      </ion-col>
+      <ion-col (click)="goPerson()">
+        <ion-icon class="Ionicons icon-ionc--"></ion-icon>
+        <p>个人中心</p>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div >
+    <ion-toolbar>
+      <ion-segment [(ngModel)]="pet" style="background-color: #fffaea;">
+        <ion-segment-button value="puppies">
+          党建新闻
+        </ion-segment-button>
+        <ion-segment-button value="kittens">
+          支部动态
+        </ion-segment-button>
+        <ion-segment-button value="ducklings">
+          党务公开
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+    <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'puppies'">
+        <ion-item style="background-color: #fffaea;">
+          <ion-thumbnail item-start>
+            <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-puppy-1.jpg" />
+          </ion-thumbnail>
+          <h3 text-wrap>日照交通发展集团荣获2017中国企业文化建设典范企业</h3>
+          <p>2018-01-05</p>
+        </ion-item>
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'kittens'">
+        dddd
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'ducklings'">
+        <ion-item style="background-color: #fffaea;">
+          <ion-thumbnail item-start>
+            <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-puppy-1.jpg">
+          </ion-thumbnail>
+          <h3 text-wrap>日照交通发展集团荣获2017中国企业文化建设典范企业</h3>
+          <p>2018-01-05</p>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

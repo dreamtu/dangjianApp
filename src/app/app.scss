@@ -1,0 +1,65 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@font-face {font-family: "Ionicons";
+  src: url('../assets/myFont/iconfont.eot?t=1515137306745'); /* IE9*/
+  src: url('../assets/myFont/iconfont.eot?t=1515137306745#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../assets/myFont/iconfont.woff?t=1515137306745') format('woff'),
+  url('../assets/myFont/iconfont.ttf?t=1515137306745') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../assets/myFont/iconfont.svg?t=1515137306745#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"Ionicons" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jifen:before { content: "\e624"; } /*积分*/
+
+.icon-v1:before { content: "\e601"; } /*home*/
+
+.icon-Pingjia:before { content: "\e617"; } /*评价*/
+
+.icon-jilu:before { content: "\e6f2"; } /*记录*/
+
+.icon-lianxi:before { content: "\e68a"; } /*联系*/
+
+.icon-shezhi:before { content: "\e60c"; } /*设置*/
+
+.icon-dangjianxuexi:before { content: "\e612"; }
+
+.icon-wenhao:before { content: "\ea27"; } /*问号*/
+
+.icon-zhuanjie:before { content: "\e6a8"; } /*转接*/
+
+.icon-ionc--:before { content: "\e618"; } /*person*/
+
+.icon-dangjianguanlixitong:before { content: "\e6b1"; } /*旗党徽*/
+
+.icon-dangjiandongtai:before { content: "\e606"; }
+
+.icon-dangjian1:before { content: "\e623"; } /*党徽*/
+
+.icon-shuifeijiaona:before { content: "\e7a1"; } /*缴纳*/
+
+.icon-jiaonadangfei:before { content: "\e62f"; } /*人+党徽*/
+
+.icon-dangjiangongzuo:before { content: "\e622"; }
+

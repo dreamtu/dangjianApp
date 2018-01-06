@@ -1,0 +1,25 @@
+.person-btn{
+  text-align: center;
+  background-color:#e2010f;
+  width:100%;height: 16rem;
+}
+.person-btn ion-icon{
+
+  background-color: orange;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size:30px;
+}
+.person-btn p{
+  color: orange;
+}
+
+.person-list button{
+  background-color: #fffaea;
+}
+.person-list button ion-icon{
+  color: #e2010f;
+  font-size: 20px;
+  padding-right: 5px;
+}

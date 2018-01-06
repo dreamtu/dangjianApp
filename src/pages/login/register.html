@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      注册
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: #f8f2e6;">
+  <ion-list>
+    <ion-item>
+      <ion-label>手机号：</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>验证码：</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>用户名：</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>密&nbsp;&nbsp;&nbsp;&nbsp;码：</ion-label>
+      <ion-input type="password" value=""></ion-input>
+    </ion-item>
+  </ion-list>
+  <div padding>
+    <button ion-button color="primary" block>注册</button>
+  </div>
+  <div text-center (click)="login()">
+    <button ion-button clear>已有账号立即登录</button>
+  </div>
+</ion-content>

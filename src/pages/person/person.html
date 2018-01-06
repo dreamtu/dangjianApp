@@ -1,0 +1,49 @@
+<ion-header no-border>
+  <ion-navbar color="primary">
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content style="background-color: #f8f2e6;">
+  <div class="person-btn">
+    <ion-row>
+      <ion-col (click)="citySelect(1)">
+        <ion-icon class="Ionicons icon-dangjiandongtai"></ion-icon>
+        <p>王华荣</p>
+        <p>XX党支部</p>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <ion-list class="person-list">
+    <button ion-item (click)="setting()">
+      <ion-icon class="Ionicons icon-shezhi"></ion-icon> 个人设置
+    </button>
+    <button ion-item (click)="itemSelected(item)">
+      <ion-icon class="Ionicons icon-Pingjia"></ion-icon> 我的收藏
+    </button>
+    <button ion-item (click)="itemSelected(item)">
+      <ion-icon class="Ionicons icon-jifen"></ion-icon> 我的积分
+    </button>
+  </ion-list>
+  <ion-list class="person-list">
+    <button ion-item (click)="itemSelected(item)">
+      <ion-icon class="Ionicons icon-jilu"></ion-icon> 培训记录
+    </button>
+    <button ion-item (click)="itemSelected(item)">
+      <ion-icon class="Ionicons icon-shuifeijiaona"></ion-icon> 党费缴纳
+    </button>
+    <button ion-item (click)="itemSelected(item)">
+      <ion-icon class="Ionicons icon-zhuanjie"></ion-icon> 关系转接
+    </button>
+  </ion-list>
+
+  <ion-list class="person-list">
+    <button ion-item (click)="itemSelected(item)">
+      <ion-icon class="Ionicons icon-wenhao"></ion-icon> 意见反馈
+    </button>
+    <button ion-item (click)="itemSelected(item)">
+      <ion-icon class="Ionicons icon-lianxi"></ion-icon> 联系我们
+    </button>
+  </ion-list>
+
+</ion-content>

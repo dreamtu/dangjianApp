@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      XX支部党员列表
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: #f8f2e6;">
+  <div class="dangyuan-btn">
+    <ion-row>
+      <ion-col (tap)="citySelect(1)">
+        <ion-icon class="Ionicons icon-dangjiandongtai"></ion-icon>
+        <p>党建新闻</p>
+      </ion-col>
+      <ion-col (tap)="citySelect(2)">
+        <ion-icon class="Ionicons icon-dangjian1"></ion-icon>
+        <p>党支部</p>
+      </ion-col>
+      <ion-col (tap)="dangyuanList()">
+        <ion-icon class="Ionicons icon-dangjianguanlixitong" ></ion-icon>
+        <p>党员列表</p>
+      </ion-col>
+      <ion-col (tap)="citySelect(3)">
+        <ion-icon class="Ionicons icon-ionc--"></ion-icon>
+        <p>个人中心</p>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

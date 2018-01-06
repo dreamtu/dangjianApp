@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      登录
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: #f8f2e6;">
+  <ion-list >
+    <ion-item>
+      <ion-label>用户名：</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>密&nbsp;&nbsp;&nbsp;&nbsp;码：</ion-label>
+      <ion-input type="password" value=""></ion-input>
+    </ion-item>
+  </ion-list>
+  <div padding>
+    <button ion-button color="primary" block>登录</button>
+  </div>
+  <div class="login-btn">
+    <button ion-button clear (click)="register()">我要注册</button> |
+    <button ion-button clear>忘记密码？</button>
+  </div>
+</ion-content>
