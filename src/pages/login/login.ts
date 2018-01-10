@@ -32,6 +32,8 @@ export class LoginPage {
     /*    this.appService.toast(JSON.stringify(this.account),function () {
 
         })*/
+
+    this.appService.setItem("latitude", "s");
   }
 
   //注册页面

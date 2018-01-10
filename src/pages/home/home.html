@@ -28,19 +28,19 @@
   <div >
     <ion-toolbar>
       <ion-segment [(ngModel)]="pet" style="background-color: #fffaea;">
-        <ion-segment-button value="puppies">
+        <ion-segment-button value="news1">
           党建新闻
         </ion-segment-button>
-        <ion-segment-button value="kittens">
+        <ion-segment-button value="news2">
           支部动态
         </ion-segment-button>
-        <ion-segment-button value="ducklings">
+        <ion-segment-button value="news3">
           党务公开
         </ion-segment-button>
       </ion-segment>
     </ion-toolbar>
     <div [ngSwitch]="pet">
-      <ion-list *ngSwitchCase="'puppies'">
+      <ion-list *ngSwitchCase="'news1'">
         <ion-item style="background-color: #fffaea;">
           <ion-thumbnail item-start>
             <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-puppy-1.jpg" />
@@ -50,11 +50,11 @@
         </ion-item>
       </ion-list>
 
-      <ion-list *ngSwitchCase="'kittens'">
+      <ion-list *ngSwitchCase="'news2'">
         dddd
       </ion-list>
 
-      <ion-list *ngSwitchCase="'ducklings'">
+      <ion-list *ngSwitchCase="'news3'">
         <ion-item style="background-color: #fffaea;">
           <ion-thumbnail item-start>
             <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-puppy-1.jpg">

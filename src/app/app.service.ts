@@ -7,10 +7,10 @@ import 'rxjs/add/operator/toPromise';
 export class AppGlobal {
 
   //接口域名
-  static domain = "http://jxdj.rzzyfw.com";
+  static domain = "http://192.168.1.140:8080";
 
   //接口地址
-  static api: any = "http://jxdj1.rzzyfw.com";
+  static api: any = "http://192.168.1.140:8080";
 
   //高德web API服务key
   static gaoDeKey: any = "972cafdc2472d8f779c5274db770ac22"
@@ -21,7 +21,7 @@ export class AppService {
   private nav: NavController;
   public toasts: Toast;
 
-  constructor(private app: App, public loadingCtrl: LoadingController, private alertCtrl: AlertController, private toastCtrl: ToastController,) {
+  constructor(private app: App, public loadingCtrl: LoadingController, private alertCtrl: AlertController, private toastCtrl: ToastController) {
     this.nav = this.app.getActiveNav();
   }
 
@@ -40,7 +40,7 @@ export class AppService {
     return str;
   }
 
-  private handleError(error: Response | any) {
+  handleError(error: Response | any) {
     let msg = '';
     if (error.status == 0) {
       msg = '请求未初始化';
@@ -157,6 +157,18 @@ export class AppService {
       return true;
     } else {
       return false;
+    }
+  }
+
+  loginConform() {
+    if (!localStorage.getItem("userid")) {
+        this.confirm("登录", "登录体验更完善功能", () => {
+          this.nav.push('LoginPage')
+        }, "登录", "暂不登录", () => {
+          this.nav.pop();
+        })
+    } else {
+
     }
   }
 

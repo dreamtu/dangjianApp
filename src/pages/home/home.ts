@@ -2,14 +2,20 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {PersonPage} from "../person/person";
 import {DangzhibuPage} from "../dangzhibu/dangzhibu";
+import {AppGlobal, AppService} from "../../app/app.service";
+import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-  pet: string = "puppies";
-  constructor(public navCtrl: NavController) {}
+  pet: string = "news1";
+  constructor(public navCtrl: NavController,private appService: AppService, public http: HttpClient) {}
+
+  ionViewDidEnter() {
+    this.getNews(this.pet);
+  }
 
   //党建新闻
   dangjianNews(){
@@ -29,5 +35,14 @@ export class HomePage {
   //个人中心
   goPerson(){
     this.navCtrl.push(PersonPage);
+  }
+
+  //新闻获取
+  getNews(index:any) {
+    this.http.get(AppGlobal.api + '/test/accountList', {}).subscribe((data: any) => {
+      console.log(data);
+    }, ( err: HttpErrorResponse) => {
+      this.appService.handleError(err);
+    });
   }
 }
